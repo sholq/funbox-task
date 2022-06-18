@@ -1,0 +1,35 @@
+@import url(./vendor/normalize.css);
+
+@font-face {
+  font-family: 'Exo';
+  font-style:  normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./vendor/Exo2.0-Thin.otf') format('opentype');
+}
+
+.App {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Exo', Arial, sans-serif;
+  color: #FFFFFF;
+  background-image: url("./image/Pattern@2x.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.main {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main__header {
+  font-size: 36px;
+  line-height: 44px;
+  margin: 36px 0 0;
+}
