@@ -6,7 +6,9 @@ export const cards = [
       "10 порций",
       "мышь в подарок"
     ],
-    weight: "0,5"
+    weight: "0,5",
+    caption: "Печень утки разварная с артишоками.",
+    isAvailable: true
   },
 
   {
@@ -16,7 +18,9 @@ export const cards = [
       "40 порций",
       "2 мыши в подарок"
     ],
-    weight: "2"
+    weight: "2",
+    caption: "Головы щучьи с чесноком да свежайшая сёмгушка.",
+    isAvailable: true
   },
 
   {
@@ -27,6 +31,8 @@ export const cards = [
       "5 мыши в подарок",
       "Заказчик доволен"
     ],
-    weight: "5"
+    weight: "5",
+    caption: "Филе из цыплят с трюфелями в бульоне.",
+    isAvailable: false
   }
 ]

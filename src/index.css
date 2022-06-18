@@ -71,6 +71,15 @@
   cursor: pointer;
 }
 
+.card__wrap_selected {
+  background-color: #E52E7A;
+}
+
+.card__wrap_unavailable {
+  background-color: #B3B3B3;
+  cursor: default;
+}
+
 .card__container {
   width: 100%;
   min-height: 472px;
@@ -81,6 +90,11 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  color: #B3B3B3;
+}
+
+.card__overview_unavailable {
+  opacity: 0.5;
 }
 
 .card__image {
@@ -95,6 +109,10 @@
   background-size: auto;
 }
 
+.card__image_unavailable {
+  opacity: 0.5;
+}
+
 .card__epigraph {
   margin: 17px 0 0;
   font-weight: 400;
@@ -102,6 +120,11 @@
   line-height: 19px;
   color: #666;
   text-align: left;
+}
+
+
+.card__epigraph_unavailable {
+  color: #B3B3B3;
 }
 
 .card__header {
@@ -129,6 +152,10 @@
   color: #666;
 }
 
+.card__description_unavailable {
+  color: #B3B3B3;
+}
+
 .card__weight {
   width: 80px;
   height: 80px;
@@ -142,6 +169,14 @@
   flex-direction: column;
   justify-content: center;
   z-index: 1;
+}
+
+.card__weight_unavailable {
+  background-color: #B3B3B3;
+}
+
+.card__weight_selected {
+  background-color: #1698D9;
 }
 
 .card__weight-value {
