@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.96831ff8.css",
-    "main.js": "/static/js/main.3bd14aa0.js",
-    "static/js/787.196cadc5.chunk.js": "/static/js/787.196cadc5.chunk.js",
-    "static/media/Pattern@2x.png": "/static/media/Pattern@2x.b70e3c03338dd57ce7b5.png",
-    "static/media/cat.png": "/static/media/cat.ef1ae8945be714b5a323.png",
-    "static/media/Exo2.0-Thin.otf": "/static/media/Exo2.0-Thin.51c257bfa8ec3e0cfb4b.otf",
-    "index.html": "/index.html",
-    "main.96831ff8.css.map": "/static/css/main.96831ff8.css.map",
-    "main.3bd14aa0.js.map": "/static/js/main.3bd14aa0.js.map",
-    "787.196cadc5.chunk.js.map": "/static/js/787.196cadc5.chunk.js.map"
+    "main.css": "/funbox-task/static/css/main.1d6ed9e8.css",
+    "main.js": "/funbox-task/static/js/main.41e23c08.js",
+    "static/js/787.196cadc5.chunk.js": "/funbox-task/static/js/787.196cadc5.chunk.js",
+    "static/media/Pattern@2x.png": "/funbox-task/static/media/Pattern@2x.b70e3c03338dd57ce7b5.png",
+    "static/media/cat.png": "/funbox-task/static/media/cat.ef1ae8945be714b5a323.png",
+    "static/media/Exo2.0-Thin.otf": "/funbox-task/static/media/Exo2.0-Thin.51c257bfa8ec3e0cfb4b.otf",
+    "index.html": "/funbox-task/index.html",
+    "main.1d6ed9e8.css.map": "/funbox-task/static/css/main.1d6ed9e8.css.map",
+    "main.41e23c08.js.map": "/funbox-task/static/js/main.41e23c08.js.map",
+    "787.196cadc5.chunk.js.map": "/funbox-task/static/js/787.196cadc5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.96831ff8.css",
-    "static/js/main.3bd14aa0.js"
+    "static/css/main.1d6ed9e8.css",
+    "static/js/main.41e23c08.js"
   ]
 }
