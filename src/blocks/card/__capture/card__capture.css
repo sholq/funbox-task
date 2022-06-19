@@ -1,0 +1,8 @@
+.card__capture {
+  margin: 14px 0 0;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 15px;
+  color: #fff;
+  cursor: default;
+}

@@ -1,0 +1,7 @@
+.card__overview {
+  width: max-content;
+  max-width: 220px;
+  margin: 0 auto 270px;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}

@@ -1,0 +1,11 @@
+.card__container {
+  width: 100%;
+  min-height: 472px;
+  position: relative;
+  background-color: #fff;
+  border-radius: 8px;
+  clip-path: polygon(41px 0, 100% 0, 100% 100%, 0 100%, 0 41px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}

@@ -1,0 +1,3 @@
+.card__image_clicked {
+  transform: scale(1.1);
+}

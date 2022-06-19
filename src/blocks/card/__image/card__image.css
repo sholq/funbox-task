@@ -1,0 +1,12 @@
+.card__image {
+  width: 320px;
+  height: 320px;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  background-image: url("./image/cat.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: auto;
+  transition: transform ease-in-out 0.7s;
+}
