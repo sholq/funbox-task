@@ -4,3 +4,15 @@
   display: flex;
   align-items: stretch;
 }
+
+@media screen and (max-width: 1100px) {
+  .list__item:last-child {
+    grid-column: span 2;
+  }
+}
+
+@media screen and (max-width: 679px) {
+  .list__item:last-child {
+    grid-column: span 1;
+  }
+}

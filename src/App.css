@@ -1,0 +1,12 @@
+.App {
+    min-width: 360px;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Exo', Arial, sans-serif;
+    color: #FFFFFF;
+    background-image: url("./image/Pattern@2x.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
