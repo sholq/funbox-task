@@ -1,17 +1,29 @@
 import {useState} from "react";
 
 export default function Card({data}) {
+  const [wasClicked, setWasClicked] = useState(false);
   const [isSelected, setIsSelected] = useState(false);
   const [isAvailable] = useState(data.isAvailable);
 
   const handleClick = () => {
-    setIsSelected(() => !isSelected);
+    if (!wasClicked && !isSelected) {
+      setWasClicked(() => !wasClicked);
+    } else {
+      setIsSelected(false);
+      setWasClicked(false);
+    }
+  }
+
+  const handleMouseOut = () => {
+    if (wasClicked) {
+      setIsSelected(true);
+    }
   }
 
   return (
     <div className="card">
-      <div className={"card__wrap" + ((isSelected) ? " card__wrap_selected" : "") + ((!isAvailable) ? " card__wrap_unavailable" : "")} onClick={isAvailable && handleClick}>
-        <div className={"card__container" + ((!isAvailable) ? " card__overview_unavailable" : "")}>
+      <div className={"card__wrap" + ((isSelected) ? " card__wrap_selected" : "") + ((!isAvailable) ? " card__wrap_unavailable" : "")} onClick={(isAvailable) ? handleClick : undefined} onMouseLeave={(isAvailable && !isSelected) ? handleMouseOut : undefined}>
+        <div className={"card__container" + ((!isAvailable) ? " card__container_unavailable" : "")}>
           <div className="card__overview">
             <p className={"card__epigraph" + ((!isAvailable) ? " card__epigraph_unavailable" : "")}>Сказочное заморское яство</p>
             <h2 className="card__header">{data.name}</h2>
@@ -24,7 +36,7 @@ export default function Card({data}) {
             <p className="card__weight-value">{data.weight}</p>
             <p className="card__unit">кг</p>
           </div>
-          <div className="card__image" />
+          <div className={"card__image" + ((wasClicked) ? " card__image_clicked" : "")} />
         </div>
       </div>
       {(isAvailable) ? (
@@ -34,7 +46,7 @@ export default function Card({data}) {
           </p>
         ) : (
           <p className="card__capture">
-            Чего сидишь? Порадуй котэ, <span className="card__action" onClick={handleClick}>купи</span>.
+            Чего сидишь? Порадуй котэ, <span className="card__action" onClick={handleClick}  onMouseLeave={handleMouseOut}>купи</span>.
           </p>
         )
       ) : (
